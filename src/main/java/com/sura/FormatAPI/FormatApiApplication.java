@@ -9,10 +9,6 @@ import com.sura.FormatAPI.Model.LetterAcute;
 public class FormatApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FormatApiApplication.class, args);
-		System.out.println("************************************");
-		LetterAcute.getInstance();
-		System.out.println(LetterAcute.LETTERS_SMALL_ACUTE.get("í"));
-		System.out.println("************************************");
+		SpringApplication.run(FormatApiApplication.class, args);	
 	}
 }
