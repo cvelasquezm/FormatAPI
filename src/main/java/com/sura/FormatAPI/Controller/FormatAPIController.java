@@ -14,14 +14,6 @@ public class FormatAPIController {
 	@GetMapping("/format/{Cad}")
 	public String format(@PathVariable String Cad) {
 		LetterAcute.getInstance();
-		//String _char = LetterAcute.LETTERS_SMALL_ACUTE;
-		
-		/*for (int i = 0; i < _char.length(); i++) {
-			String aux = _char.charAt(i)+"";
-			if (Cad.contains(aux)) {			
-				Cad = Cad.replace(aux, "\\"+LetterAcute.LETTERS_SMALL_ACUTE_UNICODE.get(aux));
-			}
-		}*/
 		
 		Cad = formatLetterSmall(Cad, LetterAcute.LETTERS_SMALL_ACUTE);
 		Cad = formatLetterCapital(Cad, LetterAcute.LETTERS_CAPITAL_ACUTE);
